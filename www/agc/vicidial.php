@@ -796,7 +796,7 @@ if ($relogin == 'YES')
     echo "<input type=\"hidden\" name=\"JS_browser_height\" value=\"\" />\n";
     echo "<input type=\"hidden\" name=\"JS_browser_width\" value=\"\" />\n";
     echo "<br /><br /><br /><center><table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-    echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+    echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
     echo "<td align=\"center\" valign=\"middle\"> Re-Login </td>";
     echo "</tr>\n";
     echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </font></td></tr>\n";
@@ -813,7 +813,7 @@ if ($relogin == 'YES')
     echo "<tr><td align=\"center\" colspan=\"2\"><input type=\"submit\" name=\"SUBMIT\" value=\"Submit\" /> &nbsp; \n";
     echo "<span id=\"LogiNReseT\"><input type=\"button\" value=\"Refresh Campaign List\" onclick=\"login_allowable_campaigns()\"></span></td></tr>\n";
     echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"><br />VERSION: $version &nbsp; &nbsp; &nbsp; BUILD: $build</font></td></tr>\n";
-    echo "</table>\n";
+    echo "</table></center>\n";
     echo "</form>\n\n";
 	echo "</body>\n\n";
 	echo "</html>\n\n";
@@ -840,10 +840,10 @@ if ($user_login_first == 1)
         #echo "<input type=\"hidden\" name=\"phone_pass\" value=\"$phone_pass\">\n";
         echo "<center><br /><b>User Login</b><br /><br />";
         echo "<table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
         echo "<td align=\"center\" valign=\"middle\"> Campaign Login </td>";
         echo "</tr>\n";
-        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </td></tr>\n";
+        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </font></td></tr>\n";
         echo "<tr><td align=\"right\">User Login:  </td>";
         echo "<td align=\"left\"><input type=\"text\" name=\"VD_login\" size=\"10\" maxlength=\"20\" value=\"$VD_login\" /></td></tr>\n";
         echo "<tr><td align=\"right\">User Password:  </td>";
@@ -886,10 +886,10 @@ if ($user_login_first == 1)
                 echo "<input type=\"hidden\" name=\"JS_browser_height\" value=\"\" />\n";
                 echo "<input type=\"hidden\" name=\"JS_browser_width\" value=\"\" />\n";
                 echo "<br /><br /><br /><center><table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-                echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+                echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
                 echo "<td align=\"center\" valign=\"middle\"> Login </td>";
                 echo "</tr>\n";
-                echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </td></tr>\n";
+                echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </font></td></tr>\n";
                 echo "<tr><td align=\"right\">Phone Login: </td>";
                 echo "<td align=\"left\"><input type=\"text\" name=\"phone_login\" size=\"10\" maxlength=\"20\" value=\"$phone_login\" /></td></tr>\n";
                 echo "<tr><td align=\"right\">Phone Password:  </td>";
@@ -903,7 +903,7 @@ if ($user_login_first == 1)
                 echo "<tr><td align=\"center\" colspan=\"2>\"<input type=\"submit\" name=\"SUBMIT\" value=\"Submit\" /> &nbsp; \n";
                 echo "<span id=\"LogiNReseT\"></span></td></tr>\n";
                 echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"><br />VERSION: $version &nbsp; &nbsp; &nbsp; BUILD: $build</font></td></tr>\n";
-                echo "</table>\n";
+                echo "</table></center>\n";
                 echo "</form>\n\n";
 				echo "</body>\n\n";
 				echo "</html>\n\n";
@@ -928,18 +928,18 @@ if ( (strlen($phone_login)<2) or (strlen($phone_pass)<2) )
     echo "<input type=\"hidden\" name=\"JS_browser_height\" value=\"\" />\n";
     echo "<input type=\"hidden\" name=\"JS_browser_width\" value=\"\" />\n";
     echo "<br /><br /><br /><center><table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-    echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+    echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
     echo "<td align=\"center\" valign=\"middle\"> phone login </td>";
     echo "</tr>\n";
-    echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </td></tr>\n";
+    echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </font></td></tr>\n";
     echo "<tr><td align=\"right\">Phone Login: </td>";
     echo "<td align=\"left\"><input type=\"text\" name=\"phone_login\" size=\"10\" maxlength=\"20\" value=\"\" /></td></tr>\n";
     echo "<tr><td align=\"right\">Phone Password:  </td>";
     echo "<td align=\"left\"><input type=\"password\" name=\"phone_pass\" size=\"10\" maxlength=\"20\" value=\"\" /></td></tr>\n";
-    echo "<tr><td align=\"center\" colspan=\"2\"><input type=\"submit\" name=\"SUBMIT\" value=\"Submit\"> &nbsp; \n";
+    echo "<tr><td align=\"center\" colspan=\"2\"><input type=\"submit\" name=\"SUBMIT\" value=\"Submit\" /> &nbsp; \n";
     echo "<span id=\"LogiNReseT\"></span></td></tr>\n";
     echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"><br />VERSION: $version &nbsp; &nbsp; &nbsp; BUILD: $build</font></td></tr>\n";
-    echo "</table>\n";
+    echo "</table></center>\n";
     echo "</form>\n\n";
 	echo "</body>\n\n";
 	echo "</html>\n\n";
@@ -1715,10 +1715,10 @@ else
         echo "<input type=\"hidden\" name=\"phone_pass\" value=\"$phone_pass\" />\n";
         echo "<center><br /><b>$VDdisplayMESSAGE</b><br /><br />";
         echo "<table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
         echo "<td align=\"center\" valign=\"middle\"> Campaign Login </td>";
         echo "</tr>\n";
-        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </td></tr>\n";
+        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"> &nbsp; </font></td></tr>\n";
         echo "<tr><td align=\"right\">User Login:  </td>";
         echo "<td align=\"left\"><input type=\"text\" name=\"VD_login\" size=\"10\" maxlength=\"20\" value=\"$VD_login\" /></td></tr>\n";
         echo "<tr><td align=\"right\">User Password:  </td>";
@@ -1809,17 +1809,17 @@ else
         echo "<input type=\"hidden\" name=\"VD_pass\" value=\"$VD_pass\" />\n";
         echo "<input type=\"hidden\" name=\"VD_campaign\" value=\"$VD_campaign\" />\n";
         echo "<br /><br /><br /><center><table width=\"460\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"$MAIN_COLOR\"><tr bgcolor=\"white\">";
-        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" /></td>";
+        echo "<td align=\"left\" valign=\"bottom\"><img src=\"./images/vdc_tab_vicidial.gif\" border=\"0\" alt=\"VICIdial\" /></td>";
         echo "<td align=\"center\" valign=\"middle\"> Login Error</td>";
         echo "</tr>\n";
-        echo "<tr><td align=\"center\" colspan=\"2\"><font size=\"1\"> &nbsp; <br /><font size=\"3\">Sorry, your phone login and password are not active in this system, please try again: <br /> &nbsp;</td></tr>\n";
+        echo "<tr><td align=\"center\" colspan=\"2\"><font size=\"1\"> &nbsp; <br /><font size=\"3\">Sorry, your phone login and password are not active in this system, please try again: <br /> &nbsp;</font></td></tr>\n";
         echo "<tr><td align=\"right\">Phone Login: </td>";
         echo "<td align=\"left\"><input type=\"text\" name=\"phone_login\" size=\"10\" maxlength=\"20\" value=\"$phone_login\"></td></tr>\n";
         echo "<tr><td align=\"right\">Phone Password:  </td>";
         echo "<td align=\"left\"><input type=\"password\" name=\"phone_pass\" size=10 maxlength=20 value=\"$phone_pass\"></td></tr>\n";
-        echo "<tr><td align=\"center\" colspan=\"2\"><input type=\"submit\" name=\"SUBMIT\" value=\"Submit\"></td></tr>\n";
-        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"><br />VERSION: $version &nbsp; &nbsp; &nbsp; BUILD: $build</td></tr>\n";
-        echo "</table>\n";
+        echo "<tr><td align=\"center\" colspan=\"2\"><input type=\"submit\" name=\"SUBMIT\" value=\"Submit\" /></td></tr>\n";
+        echo "<tr><td align=\"left\" colspan=\"2\"><font size=\"1\"><br />VERSION: $version &nbsp; &nbsp; &nbsp; BUILD: $build</font></td></tr>\n";
+        echo "</table></center>\n";
         echo "</form>\n\n";
 		echo "</body>\n\n";
 		echo "</html>\n\n";
@@ -4173,7 +4173,7 @@ function set_length(SLnumber,SLlength_goal,SLdirection)
 								var LMAcontent_match=0;
 								agentphonelive=0;
 								var conv_start=-1;
-                                var live_conf_HTML = "<font face=\"Arial,Helvetica\"><b>LIVE CALLS IN YOUR SESSION:</b></font><br /><table width=\"<?php echo $CQwidth ?>\"><tr bgcolor=\"<?php echo $SCRIPT_COLOR ?>\"><td><font class=\"log_title\">#</td><td><font class=\"log_title\">REMOTE CHANNEL</td><td><font class=\"log_title\">HANGUP</td><td><font class=\"log_title\">VOLUME</td></tr>";
+                                var live_conf_HTML = "<font face=\"Arial,Helvetica\"><b>LIVE CALLS IN YOUR SESSION:</b></font><br /><table width=\"<?php echo $CQwidth ?>\"><tr bgcolor=\"<?php echo $SCRIPT_COLOR ?>\"><td><font class=\"log_title\">#</font></td><td><font class=\"log_title\">REMOTE CHANNEL</font></td><td><font class=\"log_title\">HANGUP</font></td><td><font class=\"log_title\">VOLUME</font></td></tr>";
 								if ( (LMAcount > live_conf_calls)  || (LMAcount < live_conf_calls) || (LMAforce > 0))
 									{
 									LMAe[0]=''; LMAe[1]=''; LMAe[2]=''; LMAe[3]=''; LMAe[4]=''; LMAe[5]=''; 
@@ -4212,17 +4212,17 @@ function set_length(SLnumber,SLlength_goal,SLdirection)
 										if (channelfieldA.match(regRNnolink))
 											{
 											// do not show hangup or volume control links for recording channels
-											live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</td><td><font class=\"log_text\">recording</td><td></td></tr>";
+											live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</font></td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</font></td><td><font class=\"log_text\">recording</font></td><td></td></tr>";
 											}
 										else
 											{
 											if (volumecontrol_active!=1)
 												{
-												live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</td><td><font class=\"log_text\"><a href=\"#\" onclick=\"livehangup_send_hangup('" + channelfieldA + "');return false;\">HANGUP</a></td><td></td></tr>";
+												live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</font></td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</font></td><td><font class=\"log_text\"><a href=\"#\" onclick=\"livehangup_send_hangup('" + channelfieldA + "');return false;\">HANGUP</a></font></td><td></td></tr>";
 												}
 											else
 												{
-                                                live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</td><td><font class=\"log_text\"><a href=\"#\" onclick=\"livehangup_send_hangup('" + channelfieldA + "');return false;\">HANGUP</a></td><td><a href=\"#\" onclick=\"volume_control('UP','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_up.gif\" border=\"0\" /></a> &nbsp; <a href=\"#\" onclick=\"volume_control('DOWN','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_down.gif\" border=\"0\" /></a> &nbsp; &nbsp; &nbsp; <a href=\"#\" onclick=\"volume_control('MUTING','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_MUTE.gif\" border=\"0\" /></a> &nbsp; <a href=\"#\" onclick=\"volume_control('UNMUTE','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_UNMUTE.gif\" border=\"0\" /></a></td></tr>";
+                                                live_conf_HTML = live_conf_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</font></td><td><font class=\"" + chan_name_color + "\">" + channelfieldA + "</font></td><td><font class=\"log_text\"><a href=\"#\" onclick=\"livehangup_send_hangup('" + channelfieldA + "');return false;\">HANGUP</a></font></td><td><a href=\"#\" onclick=\"volume_control('UP','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_up.gif\" border=\"0\" /></a> &nbsp; <a href=\"#\" onclick=\"volume_control('DOWN','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_down.gif\" border=\"0\" /></a> &nbsp; &nbsp; &nbsp; <a href=\"#\" onclick=\"volume_control('MUTING','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_MUTE.gif\" border=\"0\" /></a> &nbsp; <a href=\"#\" onclick=\"volume_control('UNMUTE','" + channelfieldA + "','');return false;\"><img src=\"./images/vdc_volume_UNMUTE.gif\" border=\"0\" /></a></td></tr>";
 												}
 											}
 										}
@@ -5147,7 +5147,7 @@ function set_length(SLnumber,SLlength_goal,SLdirection)
 						var CB_calls = all_CBs_array[0];
 						var loop_ct=0;
 						var conv_start=0;
-                        var CB_HTML = "<table width=\"<?php echo $HCwidth ?>\"><tr bgcolor=\"<?php echo $SCRIPT_COLOR ?>\"><td><font class=\"log_title\">#</td><td><font class=\"log_title\"> CALLBACK DATE/TIME</td><td><font class=\"log_title\">NUMBER</td><td><font class=\"log_title\">NAME</td><td><font class=\"log_title\">  STATUS</td><td align=\"right\"><font class=\"log_title\">CAMPAIGN</td><td><font class=\"log_title\">LAST CALL DATE/TIME</td><td align=\"left\"><font class=\"log_title\"> COMMENTS</td></tr>"
+                        var CB_HTML = "<table width=\"<?php echo $HCwidth ?>\"><tr bgcolor=\"<?php echo $SCRIPT_COLOR ?>\"><td><font class=\"log_title\">#</font></td><td><font class=\"log_title\"> CALLBACK DATE/TIME</font></td><td><font class=\"log_title\">NUMBER</font></td><td><font class=\"log_title\">NAME</font></td><td><font class=\"log_title\">  STATUS</font></td><td align=\"right\"><font class=\"log_title\">CAMPAIGN</font></td><td><font class=\"log_title\">LAST CALL DATE/TIME</font></td><td align=\"left\"><font class=\"log_title\"> COMMENTS</font></td></tr>"
 						while (loop_ct < CB_calls)
 							{
 							loop_ct++;
@@ -5167,7 +5167,7 @@ function set_length(SLnumber,SLlength_goal,SLdirection)
 							var CB_lastcall_time = call_array[7];
 							var CB_callback_time = call_array[8];
 							var CB_comments = call_array[9];
-                            CB_HTML = CB_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</td><td><font class=\"log_text\">" + CB_callback_time + "</td><td><font class=\"log_text\"><a href=\"#\" onclick=\"new_callback_call('" + CB_id + "','" + CB_lead_id + "');return false;\">" + CB_phone + "</a></td><td><font class=\"log_text\">" + CB_name + "</td><td><font class=\"log_text\">" + CB_status + "</td><td><font class=\"log_text\">" + CB_campaign + "</td><td align=\"right\"><font class=\"log_text\">" + CB_lastcall_time + "&nbsp;</td><td align=\"right\"><font class=\"log_text\">" + CB_comments + "&nbsp;</td></tr>";
+                            CB_HTML = CB_HTML + "<tr bgcolor=\"" + row_color + "\"><td><font class=\"log_text\">" + loop_ct + "</font></td><td><font class=\"log_text\">" + CB_callback_time + "</td><td><font class=\"log_text\"><a href=\"#\" onclick=\"new_callback_call('" + CB_id + "','" + CB_lead_id + "');return false;\">" + CB_phone + "</a></td><td><font class=\"log_text\">" + CB_name + "</td><td><font class=\"log_text\">" + CB_status + "</td><td><font class=\"log_text\">" + CB_campaign + "</td><td align=\"right\"><font class=\"log_text\">" + CB_lastcall_time + "&nbsp;</td><td align=\"right\"><font class=\"log_text\">" + CB_comments + "&nbsp;</td></tr>";
 					
 							}
 						CB_HTML = CB_HTML + "</table>";
@@ -11449,7 +11449,7 @@ $zi=2;
  <br />
  <br />
  <br />
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./images/loading.gif" height="90" width="545" alt="Loading">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./images/loading.gif" height="90" width="545" alt="Loading" />
  <br />
  <br />
     </td></tr></table>
@@ -11465,25 +11465,25 @@ $zi=2;
 	<font class="queue_text">
 	<a href="#" onclick="start_all_refresh();"><font class="queue_text">Logged in as User</font></a>
 	<?php echo ": $VD_login on Phone: $SIP_user to campaign: $VD_campaign&nbsp; \n"; ?>
-	 &nbsp; &nbsp; <span id="agentchannelSPAN"></span>
+	 &nbsp; &nbsp; <span id="agentchannelSPAN"></span></font>
     </td><td colspan="3" valign="top" align="right"><font class="body_text">
 	<?php if ($territoryCT > 0) {echo "<a href=\"#\" onclick=\"OpeNTerritorYSelectioN();return false;\">TERRITORIES</a> &nbsp; &nbsp; \n";} ?>
 	<?php if ($INgrpCT > 0) {echo "<a href=\"#\" onclick=\"OpeNGrouPSelectioN();return false;\">GROUPS</a> &nbsp; &nbsp; \n";} ?>
 	<?php	echo "<a href=\"#\" onclick=\"NormalLogout();return false;\">LOGOUT</a>\n"; ?>
-    </td></tr>
+    </font></td></tr>
     </table>
 </span>
 
 <span style="position:absolute;left:0px;top:13px;z-index:<?php $zi++; echo $zi ?>;" id="Tabs">
     <table border="0" bgcolor="#FFFFFF" width=<?php echo $MNwidth ?> height=30>
     <tr valign="top" align="left">
-    <td align="left" width="115"><a href="#" onclick="MainPanelToFront('NO');"><img src="./images/vdc_tab_vicidial.gif" alt="MAIN" width="115" height="30" border="0"></a></td>
-    <td align="left" width="90"><a href="#" onclick="ScriptPanelToFront();"><img src="./images/vdc_tab_script.gif" alt="SCRIPT" width="90" height="30" border="0"></a></td>
+    <td align="left" width="115"><a href="#" onclick="MainPanelToFront('NO');"><img src="./images/vdc_tab_vicidial.gif" alt="MAIN" width="115" height="30" border="0" /></a></td>
+    <td align="left" width="90"><a href="#" onclick="ScriptPanelToFront();"><img src="./images/vdc_tab_script.gif" alt="SCRIPT" width="90" height="30" border="0" /></a></td>
 	<?php if ($custom_fields_enabled > 0)
-    {echo "<td align=\"left\" width=\"67\"><a href=\"#\" onclick=\"FormPanelToFront();\"><img src=\"./images/vdc_tab_form.gif\" alt=\"FORM\" width=\"67\" height=\"30\" border=\"0\"></a></td>\n";}
+    {echo "<td align=\"left\" width=\"67\"><a href=\"#\" onclick=\"FormPanelToFront();\"><img src=\"./images/vdc_tab_form.gif\" alt=\"FORM\" width=\"67\" height=\"30\" border=\"0\" /></a></td>\n";}
 	?>
     <td width="<?php echo $HSwidth ?>" valign="middle" align="center"><font class="body_text">&nbsp; <span id="status">LIVE</span>&nbsp; &nbsp;session ID: <span id="sessionIDspan"></span>&nbsp; &nbsp;<span id="AgentStatusCalls"></span></td>
-    <td width="109"><img src="./images/agc_live_call_OFF.gif" name="livecall" alt="Live Call" width="109" height="30" border="0"></td>
+    <td width="109"><img src="./images/agc_live_call_OFF.gif" name="livecall" alt="Live Call" width="109" height="30" border="0" /></td>
     </tr>
  </table>
 </span>
@@ -11500,14 +11500,14 @@ $zi=2;
 	<?php
 	if ($webphone_location == 'bar')
 		{
-        echo "<img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\"><br />\n";
+        echo "<img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\" /><br />\n";
 		}
 	?>	
     <font class="body_text"> STATUS: <span id="MainStatuSSpan"></span></font></td></tr>
     <tr><td colspan="3"><span id="busycallsdebug"></span></td></tr>
     <tr><td width=150 align="left" valign="top">
 	<font class="body_text"><center>
-    <span STYLE="background-color: #CCFFCC" id="DiaLControl"><a href="#" onclick="ManualDialNext('','','','','','0');"><img src="./images/vdc_LB_dialnextnumber_OFF.gif" border="0" alt="Dial Next Number"></a></span><br />
+    <span STYLE="background-color: #CCFFCC" id="DiaLControl"><a href="#" onclick="ManualDialNext('','','','','','0');"><img src="./images/vdc_LB_dialnextnumber_OFF.gif" border="0" alt="Dial Next Number" /></a></span><br />
 	<span id="ManualQueueNotice"></span>
 	<span id="ManualQueueChoice"></span>
     <span id="DiaLLeaDPrevieW"><font class="preview_text"> <input type="checkbox" name="LeadPreview" size="1" value="0" /> LEAD PREVIEW<br /></font></span>
@@ -11525,26 +11525,26 @@ $zi=2;
     RECORD ID: <font class="body_small"><span id="RecorDID"></span></font><br />
 	<center>
 	<!-- <a href=\"#\" onclick=\"conf_send_recording('MonitorConf','" + head_conf + "','');return false;\">Record</a> -->
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="RecorDControl"><a href="#" onclick="conf_send_recording('MonitorConf',session_id,'');return false;"><img src="./images/vdc_LB_startrecording.gif" border="0" alt="Start Recording"></a></span><br />
-    <span id="SpacerSpanA"><img src="./images/blank.gif" width="145" height="16" border="0"></span><br />
-    <span style="background-color: #FFFFFF" id="WebFormSpan"><img src="./images/vdc_LB_webform_OFF.gif" border="0" alt="Web Form"></span><br />
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="RecorDControl"><a href="#" onclick="conf_send_recording('MonitorConf',session_id,'');return false;"><img src="./images/vdc_LB_startrecording.gif" border="0" alt="Start Recording" /></a></span><br />
+    <span id="SpacerSpanA"><img src="./images/blank.gif" width="145" height="16" border="0" /></span><br />
+    <span style="background-color: #FFFFFF" id="WebFormSpan"><img src="./images/vdc_LB_webform_OFF.gif" border="0" alt="Web Form" /></span><br />
 	<?php
 	if ($enable_second_webform > 0)
-        {echo "<span STYLE=\"background-color: #FFFFFF\" id=\"WebFormSpanTwo\"><img src=\"./images/vdc_LB_webform_two_OFF.gif\" border=\"0\" alt=\"Web Form 2\"></span><br />\n";}
+        {echo "<span STYLE=\"background-color: #FFFFFF\" id=\"WebFormSpanTwo\"><img src=\"./images/vdc_LB_webform_two_OFF.gif\" border=\"0\" alt=\"Web Form 2\" /></span><br />\n";}
 	?>
     <font class="body_small_bold"><span id="ParkCounterSpan"> &nbsp; </span></font><br />
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="ParkControl"><img src="./images/vdc_LB_parkcall_OFF.gif" border="0" alt="Park Call"></span><br />
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="ParkControl"><img src="./images/vdc_LB_parkcall_OFF.gif" border="0" alt="Park Call" /></span><br />
 	<?php
 	if ( ($ivr_park_call=='ENABLED') or ($ivr_park_call=='ENABLED_PARK_ONLY') )
-        {echo "<span STYLE=\"background-color: $MAIN_COLOR\" id=\"ivrParkControl\"><img src=\"./images/vdc_LB_ivrparkcall_OFF.gif\" border=\"0\" alt=\"IVR Park Call\"></span><br />\n";}
+        {echo "<span STYLE=\"background-color: $MAIN_COLOR\" id=\"ivrParkControl\"><img src=\"./images/vdc_LB_ivrparkcall_OFF.gif\" border=\"0\" alt=\"IVR Park Call\" /></span><br />\n";}
 	else
 		{echo "<span STYLE=\"background-color: $MAIN_COLOR\" id=\"ivrParkControl\"></span>\n";}
 	?>
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="XferControl"><img src="./images/vdc_LB_transferconf_OFF.gif" border="0" alt="Transfer - Conference"></span><br />
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="XferControl"><img src="./images/vdc_LB_transferconf_OFF.gif" border="0" alt="Transfer - Conference" /></span><br />
 
 	<?php
 	if ($quick_transfer_button_enabled > 0)
-        {echo "<span STYLE=\"background-color: $MAIN_COLOR\" id=\"QuickXfer\"><img src=\"./images/vdc_LB_quickxfer_OFF.gif\" border=\"0\" alt=\"Quick Transfer\"></span><br />\n";}
+        {echo "<span STYLE=\"background-color: $MAIN_COLOR\" id=\"QuickXfer\"><img src=\"./images/vdc_LB_quickxfer_OFF.gif\" border=\"0\" alt=\"Quick Transfer\" /></span><br />\n";}
 	?>
 
 	<span id="ReQueueCall"></span>
@@ -11554,10 +11554,10 @@ $zi=2;
         {echo "<br />\n";}
 	?>
 
-    <span id="SpacerSpanC"><img src="./images/blank.gif" width="145" height="16" border="0"></span><br />
-    <span STYLE="background-color: #FFCCFF" id="HangupControl"><img src="./images/vdc_LB_hangupcustomer_OFF.gif" border="0" alt="Hangup Customer"></span><br />
-    <span id="SpacerSpanD"><img src="./images/blank.gif" width="145" height="16" border="0"></span><br />
-    <div class="text_input" id="SendDTMFdiv"><span style="background-color: <?php echo $MAIN_COLOR ?>" id="SendDTMF"><a href="#" onclick="SendConfDTMF(session_id);return false;"><img src="./images/vdc_LB_senddtmf.gif" border="0" alt="Send DTMF" align="bottom"></a>  <input type="text" size="5" name="conf_dtmf" class="cust_form" value="" maxlength="50" /></div></span><br />
+    <span id="SpacerSpanC"><img src="./images/blank.gif" width="145" height="16" border="0" /></span><br />
+    <span STYLE="background-color: #FFCCFF" id="HangupControl"><img src="./images/vdc_LB_hangupcustomer_OFF.gif" border="0" alt="Hangup Customer" /></span><br />
+    <span id="SpacerSpanD"><img src="./images/blank.gif" width="145" height="16" border="0" /></span><br />
+    <div class="text_input" id="SendDTMFdiv"><span style="background-color: <?php echo $MAIN_COLOR ?>" id="SendDTMF"><a href="#" onclick="SendConfDTMF(session_id);return false;"><img src="./images/vdc_LB_senddtmf.gif" border="0" alt="Send DTMF" align="bottom" /></a>  <input type="text" size="5" name="conf_dtmf" class="cust_form" value="" maxlength="50" /></div></span><br />
 	</center>
 	</font>
 	</td>
@@ -11784,14 +11784,14 @@ $zi=2;
 </span>
 
 <?php if ( ($HK_statuses_camp > 0) && ( ($user_level>=$HKuser_level) or ($VU_hotkeys_active > 0) ) ) { ?>
-<span style="position:absolute;left:<?php echo $HKwidth ?>px;top:<?php echo $HKheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="hotkeysdisplay"><a href="#" onMouseOver="HotKeys('ON')"><img src="./images/vdc_XB_hotkeysactive_OFF.gif" border="0" alt="HOT KEYS INACTIVE"></a></span>
+<span style="position:absolute;left:<?php echo $HKwidth ?>px;top:<?php echo $HKheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="hotkeysdisplay"><a href="#" onMouseOver="HotKeys('ON')"><img src="./images/vdc_XB_hotkeysactive_OFF.gif" border="0" alt="HOT KEYS INACTIVE" /></a></span>
 <?php } ?>
 
 <span style="position:absolute;left:<?php echo $SCwidth ?>px;top:<?php echo $SCheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="SecondSspan"><font class="body_text"> seconds: 
 <span id="SecondSDISP"> &nbsp; &nbsp; </span>
 </font></span>
 
-<span style="position:absolute;left:5px;top:<?php echo $CBheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="VolumeControlSpan"><span id="VolumeUpSpan"><img src="./images/vdc_volume_up_off.gif" border="0"></span><br /><span id="VolumeDownSpan"><img src="./images/vdc_volume_down_off.gif" border="0"></span>
+<span style="position:absolute;left:5px;top:<?php echo $CBheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="VolumeControlSpan"><span id="VolumeUpSpan"><img src="./images/vdc_volume_up_off.gif" border="0" /></span><br /><span id="VolumeDownSpan"><img src="./images/vdc_volume_down_off.gif" border="0" /></span>
 </font></span>
 
 <span style="position:absolute;left:35px;top:<?php echo $CBheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="AgentStatusSpan"><font class="body_text">
@@ -11869,7 +11869,7 @@ if ($agent_display_dialable_leads > 0)
 <span style="position:absolute;left:154px;top:<?php echo $SFheight ?>px;z-index:<?php $zi++; echo $zi ?>;" id="ScriptPanel">
 	<?php
 	if ($webphone_location == 'bar')
-        {echo "<img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\"><br />\n";}
+        {echo "<img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\" /><br />\n";}
 	?>
     <table border="0" bgcolor="<?php echo $SCRIPT_COLOR ?>" width="<?php echo $SSwidth ?>" height="<?php echo $SSheight ?>"><tr><td align="left" valign="top"><font class="sb_text"><div class="noscroll_script" id="ScriptContents">AGENT SCRIPT</div></font></td></tr></table>
 </span>
@@ -11897,17 +11897,17 @@ if ($agent_display_dialable_leads > 0)
     <td align="left" height="30">
 	<span class="text_input" id="TransferMaindiv">
 	<font class="body_text">
-    <img src="./images/vdc_XB_header.gif" border="0" alt="Transfer - Conference" style="vertical-align:middle"> &nbsp; &nbsp; &nbsp; &nbsp; <span id="XfeRDiaLGrouPSelecteD"></span> &nbsp; &nbsp; <span id="XfeRCID"></span><br />
+    <img src="./images/vdc_XB_header.gif" border="0" alt="Transfer - Conference" style="vertical-align:middle" /> &nbsp; &nbsp; &nbsp; &nbsp; <span id="XfeRDiaLGrouPSelecteD"></span> &nbsp; &nbsp; <span id="XfeRCID"></span><br />
 
     <table cellpadding="0" cellspacing="1" border="0">
     <tr>
     <td align="left" colspan="3">
     <span id="XfeRGrouPLisT"><select size="1" name="XfeRGrouP" id="XfeRGrouP" class="cust_form" onChange="XferAgentSelectLink();return false;"><option>-- SELECT A GROUP TO SEND YOUR CALL TO --</option></select></span>
 	 
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="LocalCloser"><img src="./images/vdc_XB_localcloser_OFF.gif" border="0" alt="LOCAL CLOSER" style="vertical-align:middle"></span> &nbsp; &nbsp;
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="LocalCloser"><img src="./images/vdc_XB_localcloser_OFF.gif" border="0" alt="LOCAL CLOSER" style="vertical-align:middle" /></span> &nbsp; &nbsp;
  </td>
     <td align="left">
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="HangupXferLine"><img src="./images/vdc_XB_hangupxferline_OFF.gif" border="0" alt="Hangup Xfer Line" style="vertical-align:middle"></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="HangupXferLine"><img src="./images/vdc_XB_hangupxferline_OFF.gif" border="0" alt="Hangup Xfer Line" style="vertical-align:middle" /></span>
  </td>
  </tr>
 
@@ -11921,13 +11921,13 @@ if ($agent_display_dialable_leads > 0)
     <span id="consultative_checkbox"><input type="checkbox" name="consultativexfer" size="1" value="0"><font class="body_tiny" /> CONSULTATIVE &nbsp;</font></span>
  </td>
     <td align="left">
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="HangupBothLines"><a href="#" onclick="bothcall_send_hangup();return false;"><img src="./images/vdc_XB_hangupbothlines.gif" border="0" alt="Hangup Both Lines" style="vertical-align:middle"></a></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="HangupBothLines"><a href="#" onclick="bothcall_send_hangup();return false;"><img src="./images/vdc_XB_hangupbothlines.gif" border="0" alt="Hangup Both Lines" style="vertical-align:middle" /></a></span>
  </td>
  </tr>
 
     <tr>
     <td align="left" colspan="2">
-    <img src="./images/vdc_XB_number.gif" border="0" alt="Number to call" style="vertical-align:middle">
+    <img src="./images/vdc_XB_number.gif" border="0" alt="Number to call" style="vertical-align:middle" />
 	&nbsp; 
 	<?php
 	if ($hide_xfer_number_to_dial=='ENABLED')
@@ -11952,23 +11952,23 @@ if ($agent_display_dialable_leads > 0)
     <span id="dialoverride_checkbox"><input type="checkbox" name="xferoverride" size="1" value="0"><font class="body_tiny" /> DIAL OVERRIDE</font></span>
  </td>
     <td align="left">
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="Leave3WayCall"><a href="#" onclick="leave_3way_call('FIRST');return false;"><img src="./images/vdc_XB_leave3waycall.gif" border="0" alt="LEAVE 3-WAY CALL" style="vertical-align:middle"></a></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="Leave3WayCall"><a href="#" onclick="leave_3way_call('FIRST');return false;"><img src="./images/vdc_XB_leave3waycall.gif" border="0" alt="LEAVE 3-WAY CALL" style="vertical-align:middle" /></a></span>
  </td>
  </tr>
 
     <tr>
     <td align="left" COLSPAN="4">
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialBlindTransfer"><img src="./images/vdc_XB_blindtransfer_OFF.gif" border="0" alt="Dial Blind Transfer" style="vertical-align:middle"></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialBlindTransfer"><img src="./images/vdc_XB_blindtransfer_OFF.gif" border="0" alt="Dial Blind Transfer" style="vertical-align:middle" /></span>
 	&nbsp;
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialWithCustomer"><a href="#" onclick="SendManualDial('YES');return false;"><img src="./images/vdc_XB_dialwithcustomer.gif" border="0" alt="Dial With Customer" style="vertical-align:middle"></a></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialWithCustomer"><a href="#" onclick="SendManualDial('YES');return false;"><img src="./images/vdc_XB_dialwithcustomer.gif" border="0" alt="Dial With Customer" style="vertical-align:middle" /></a></span>
 	&nbsp;
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="ParkCustomerDial"><a href="#" onclick="xfer_park_dial();return false;"><img src="./images/vdc_XB_parkcustomerdial.gif" border="0" alt="Park Customer Dial" style="vertical-align:middle"></a></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="ParkCustomerDial"><a href="#" onclick="xfer_park_dial();return false;"><img src="./images/vdc_XB_parkcustomerdial.gif" border="0" alt="Park Customer Dial" style="vertical-align:middle" /></a></span>
 	&nbsp;
 	<?php
 	if ($enable_xfer_presets=='ENABLED')
 		{
 		?>
-        <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="PresetPullDown"><a href="#" onclick="generate_presets_pulldown();return false;"><img src="./images/vdc_XB_presetsbutton.gif" border="0" alt="Presets Button" style="vertical-align:middle"></a></span>
+        <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="PresetPullDown"><a href="#" onclick="generate_presets_pulldown();return false;"><img src="./images/vdc_XB_presetsbutton.gif" border="0" alt="Presets Button" style="vertical-align:middle" /></a></span>
 		<?php
 		}
 	else
@@ -11985,7 +11985,7 @@ if ($agent_display_dialable_leads > 0)
 		}
 	?>
 	&nbsp;
-    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialBlindVMail"><img src="./images/vdc_XB_ammessage_OFF.gif" border="0" alt="Blind Transfer VMail Message" style="vertical-align:middle"></span>
+    <span STYLE="background-color: <?php echo $MAIN_COLOR ?>" id="DialBlindVMail"><img src="./images/vdc_XB_ammessage_OFF.gif" border="0" alt="Blind Transfer VMail Message" style="vertical-align:middle" /></span>
  </td>
  </tr>
 
@@ -12146,7 +12146,7 @@ Available Agents Transfer: <span id="AgentXferViewSelect"></span></center></font
     <table border="1" bgcolor="#CCFFCC" width="<?php echo $CAwidth ?>" height="<?php echo $WRheight ?>"><tr><td align="center" valign="top"> Select a CallBack Date :<span id="CallBackDatE"></span><br />
 	<?php
 	if ($webphone_location == 'bar')
-        {echo "<br /><img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\"><br />\n";}
+        {echo "<br /><img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\" /><br />\n";}
 	?>
     <input type="hidden" name="CallBackDatESelectioN" id="CallBackDatESelectioN" />
     <input type="hidden" name="CallBackTimESelectioN" id="CallBackTimESelectioN" />
@@ -12377,7 +12377,7 @@ Available Agents Transfer: <span id="AgentXferViewSelect"></span></center></font
 <form name="inert_form" id="inert_form" onsubmit="return false;">
 
 <span style="position:absolute;left:0px;top:400px;z-index:1;" id="NothingBox2">
-<!--  <BUTTON Type=button name="inert_button" id="inert_button" onclick="return false;"><img src="./images/blank.gif"></BUTTON> -->
+<!--  <BUTTON Type=button name="inert_button" id="inert_button" onclick="return false;"><img src="./images/blank.gif" /></BUTTON> -->
 <input type="checkbox" name="inert_button" id=inert_button size="1" value="0" onclick="return false;" />
 </span>
 
