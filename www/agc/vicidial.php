@@ -330,10 +330,11 @@
 # 101227-1645 - Added dialplan off toggle options, and settings and code changes for top bar webphone
 # 110109-1205 - Added queuemetrics_loginout NONE option
 # 110112-1254 - Added options.php option for focus/blur/enter functions
+# 110125-1050 - Changed to XHTML compliant formatting
 #
 
-$version = '2.4-307';
-$build = '110112-1254';
+$version = '2.4-308';
+$build = '110125-1050';
 $mel=1;					# Mysql Error Log enabled = 1
 $mysql_log_count=69;
 $one_mysql_log=0;
@@ -788,7 +789,7 @@ if ($relogin == 'YES')
 	if ($hide_timeclock_link < 1)
         {echo "<a href=\"./timeclock.php?referrer=agent&amp;pl=$phone_login&amp;pp=$phone_pass&amp;VD_login=$VD_login&amp;VD_pass=$VD_pass\"> Timeclock</a><br />\n";}
     echo "<table width=\"100%\"><tr><td></td>\n";
-    echo "<!-- internationalization-links-placeholder-vicidial -->\n";
+	echo "<!-- INTERNATIONALIZATION-LINKS-PLACEHOLDER-VICIDIAL -->\n";
     echo "</tr></table>\n";
     echo "<form name=\"vicidial_form\" id=\"vicidial_form\" action=\"$agcPAGE\" method=\"post\">\n";
     echo "<input type=\"hidden\" name=\"DB\" value=\"$DB\" />\n";
@@ -1796,7 +1797,7 @@ else
 		echo "</head>\n";
         echo "<body onresize=\"browser_dimensions();\"  onload=\"browser_dimensions();\">\n";
 		if ($hide_timeclock_link < 1)
-            {echo "<A HREF=\"./timeclock.php?referrer=agent&amp;pl=$phone_login&amp;pp=$phone_pass&amp;VD_login=$VD_login&amp;VD_pass=$VD_pass\"> Timeclock</a><br />\n";}
+            {echo "<a href=\"./timeclock.php?referrer=agent&amp;pl=$phone_login&amp;pp=$phone_pass&amp;VD_login=$VD_login&amp;VD_pass=$VD_pass\"> Timeclock</a><br />\n";}
         echo "<table width=\"100%\"><tr><td></td>\n";
 		echo "<!-- INTERNATIONALIZATION-LINKS-PLACEHOLDER-VICIDIAL -->\n";
         echo "</tr></table>\n";
@@ -11458,7 +11459,7 @@ $zi=2;
 <span style="position:absolute;left:0px;top:0px;z-index:<?php $zi++; echo $zi ?>;" id="Header">
     <table border="0" cellpadding="0" cellspacing="0" bgcolor="white" width="<?php echo $MNwidth ?>" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" valign="top" align="left">
     <tr valign="top" align="left"><td colspan="3" valign="top" align="left">
-    <input type="hidden" NAME="extension" ID="extension" />
+    <input type="hidden" name="extension" id="extension" />
     <input type="hidden" name="custom_field_values" id="custom_field_values" value="" />
     <input type="hidden" name="FORM_LOADED" id="FORM_LOADED" value="0" />
 	<font class="queue_text">
@@ -12147,12 +12148,12 @@ Available Agents Transfer: <span id="AgentXferViewSelect"></span></center></font
 	if ($webphone_location == 'bar')
         {echo "<br /><img src=\"images/pixel.gif\" width=\"1\" height=\"$webphone_height\"><br />\n";}
 	?>
-    <input type="hidden" name="CallBackDatESelectioN" ID="CallBackDatESelectioN" />
-    <input type="hidden" name="CallBackTimESelectioN" ID="CallBackTimESelectioN" />
+    <input type="hidden" name="CallBackDatESelectioN" id="CallBackDatESelectioN" />
+    <input type="hidden" name="CallBackTimESelectioN" id="CallBackTimESelectioN" />
 	<span id="CallBackDatEPrinT">Select a Date Below</span> &nbsp;
 	<span id="CallBackTimEPrinT"></span> &nbsp; &nbsp;
 	Hour: 
-    <SELECT size="1" NAME="CBT_hour" ID="CBT_hour">
+    <select size="1" name="CBT_hour" id="CBT_hour">
 	<option>01</option>
 	<option>02</option>
 	<option>03</option>
@@ -12167,7 +12168,7 @@ Available Agents Transfer: <span id="AgentXferViewSelect"></span></center></font
 	<option>12</option>
 	</select> &nbsp;
 	Minutes: 
-    <SELECT size="1" NAME="CBT_minute" ID="CBT_minute">
+    <select size="1" name="CBT_minute" id="CBT_minute">
 	<option>00</option>
 	<option>05</option>
 	<option>10</option>
@@ -12182,7 +12183,7 @@ Available Agents Transfer: <span id="AgentXferViewSelect"></span></center></font
 	<option>55</option>
 	</select> &nbsp;
 
-    <SELECT size="1" NAME="CBT_ampm" ID="CBT_ampm">
+    <select size="1" name="CBT_ampm" id="CBT_ampm">
 	<option>AM</option>
 	<option selected>PM</option>
     </select> &nbsp;<br />
