@@ -789,7 +789,7 @@ if ($relogin == 'YES')
 	if ($hide_timeclock_link < 1)
         {echo "<a href=\"./timeclock.php?referrer=agent&amp;pl=$phone_login&amp;pp=$phone_pass&amp;VD_login=$VD_login&amp;VD_pass=$VD_pass\"> Timeclock</a><br />\n";}
     echo "<table width=\"100%\"><tr><td></td>\n";
-    echo "<!-- internationalization-links-placeholder-vicidial -->\n";
+	echo "<!-- INTERNATIONALIZATION-LINKS-PLACEHOLDER-VICIDIAL -->\n";
     echo "</tr></table>\n";
     echo "<form name=\"vicidial_form\" id=\"vicidial_form\" action=\"$agcPAGE\" method=\"post\">\n";
     echo "<input type=\"hidden\" name=\"DB\" value=\"$DB\" />\n";
